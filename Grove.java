@@ -16,6 +16,9 @@ public class Grove {
 
     public int PlantTree(Tree x){
 
+        // Having problem with creating a for loop to test for empty spots in the array
+        // My initial attempt would exit the loop on the first attemp because of the if else statement
+
         // if(x != null){
         //     for(int i = 0; i < 12; i++){
         //         if(spots[i] != null){
@@ -28,16 +31,16 @@ public class Grove {
             
         // }
 
-        // for(int i = 0; i < 12; i++){
-        //     if(spots[i] == null){
-        //         spots[i] = x;
-        //         return i;
+        for(int i = 0; i < 12; i++){
+            if(spots[i] == null){
+                spots[i] = x;
+                return i;
 
-        //     }
-        //     else{
-        //             return -1;
-        //     }
-        // }
+            }
+        }
+
+        return -1;
+
     }
 
     public Tree RemoveTree(int y){
