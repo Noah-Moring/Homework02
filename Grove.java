@@ -51,8 +51,12 @@ public class Grove {
             return removedTree;
         }
         else{
-            Tree removedTree = null;
-            return removedTree;
+            return spots[y];
+            // Tree removedTree = null;
+            // return removedTree;
+
+            // Pretty sure these both do the same thing because if the spot is null then we can just return the 
+            // the null Tree anyway
         }
 
             // if(i == y){
